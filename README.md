@@ -8,7 +8,7 @@ Teaching Assistant, CS 6120 Natural Language Processing
 
 ## Research
 
-**Data Attribution & Influence Functions** *(AI Capstone, advised by Dr. Nadim Saad, Stanford PhD)*  
+**Data Attribution & Influence Functions** *(AI Capstone, advised by Dr. Nadim Saad)*  
 Investigating reliability and scaling relationships of influence functions and attribution methods for large neural networks. Exploring applications in recommendation systems and potential novel attribution approaches.
 
 ---
