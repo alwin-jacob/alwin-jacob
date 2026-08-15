@@ -4,9 +4,9 @@
 
 MS Computer Science, Northeastern University · San Jose, CA
 
-I build **production AI systems at the boundary between model behavior and systems performance** — evaluation infrastructure, LLM inference, reliability tooling, and the software systems that make ML workloads measurable, reproducible, and efficient.
+I build **production AI systems at the boundary between model behavior and systems performance**: evaluation infrastructure, LLM inference, reliability tooling, and the software systems that make ML workloads measurable, reproducible, and efficient.
 
-**Current technical arc:**
+**My Evolving Technical Arc:**
 `evaluation → inference → rollout systems → post-training / training infrastructure`
 
 [LinkedIn](https://linkedin.com/in/alwin-jacob) · [Email](mailto:alwinjacob88@gmail.com)
@@ -15,7 +15,7 @@ I build **production AI systems at the boundary between model behavior and syste
 
 ## Featured Engineering
 
-### 🧪 LLM Evaluation & Reliability
+### LLM Evaluation & Reliability
 
 **Python · PyTorch · FastAPI · pytest · CI**
 
@@ -38,7 +38,7 @@ How do we make stochastic model behavior testable with the rigor expected from p
 
 ---
 
-### ⚡ LLM Inference Systems
+### LLM Inference Systems
 
 **vLLM · PyTorch · CUDA · Nsight**
 
