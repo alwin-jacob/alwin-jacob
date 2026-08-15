@@ -6,7 +6,7 @@ MS Computer Science, Northeastern University · San Jose, CA
 
 I build **production AI systems at the boundary between model behavior and systems performance**: evaluation infrastructure, LLM inference, reliability tooling, and the software systems that make ML workloads measurable, reproducible, and efficient.
 
-**My Evolving Technical Arc:**
+**My Evolving Technical Arc :**
 `evaluation → inference → rollout systems → post-training / training infrastructure`
 
 [LinkedIn](https://linkedin.com/in/alwin-jacob) · [Email](mailto:alwinjacob88@gmail.com)
