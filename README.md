@@ -169,4 +169,4 @@ I am especially interested in systems where **software architecture materially d
 
 `ML systems` · `inference` · `evaluation` · `AI reliability` · `distributed systems` · `performance engineering` · `rollout infrastructure` · `training systems`
 
-I enjoy working across abstraction boundaries — from model behavior and evaluation methodology down through serving architecture, profiling, runtime behavior, and implementation.
+I enjoy working across abstraction boundaries, from model behavior and evaluation methodology down through serving architecture, profiling, runtime behavior, and implementation.
