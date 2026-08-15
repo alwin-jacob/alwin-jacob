@@ -1,51 +1,172 @@
 # Alwin Jacob
 
-**MS Computer Science @ Northeastern University** · Graduating May 2026  
-Researching **data attribution & influence functions** for neural networks  
-Teaching Assistant, CS 6120 Natural Language Processing
+**AI/ML Systems Engineer · Evaluation · Inference · Reliability**
+
+MS Computer Science, Northeastern University · San Jose, CA
+
+I build **production AI systems at the boundary between model behavior and systems performance** — evaluation infrastructure, LLM inference, reliability tooling, and the software systems that make ML workloads measurable, reproducible, and efficient.
+
+**Current technical arc:**
+`evaluation → inference → rollout systems → post-training / training infrastructure`
+
+[LinkedIn](https://linkedin.com/in/alwin-jacob) · [Email](mailto:alwinjacob88@gmail.com)
 
 ---
 
-## Research
+## Featured Engineering
 
-**Data Attribution & Influence Functions** *(AI Capstone, advised by Dr. Nadim Saad)*  
-Investigating reliability and scaling relationships of influence functions and attribution methods for large neural networks. Exploring applications in recommendation systems and potential novel attribution approaches.
+### 🧪 LLM Evaluation & Reliability
 
----
+**Python · PyTorch · FastAPI · pytest · CI**
 
-## Selected Projects
+Evaluation and regression infrastructure for models and agents.
 
-| Project | What it does | Stack |
-|---|---|---|
-| [🔬 Influence Functions for RecSys](#) | Data attribution applied to recommendation systems — which training examples drive predictions? | PyTorch · Influence Functions |
-| [⚖️ Fair Marketplace Recommendations](#) | Two-sided fairness: top 5% of sellers were getting 80% of exposure. Multi-objective optimization fixed it. | PyTorch · cvxpy · FastAPI · Redis |
-| [🔍 AcademEase RAG System](#) | arXiv papers, FAISS vector search, sub-2s queries, 99.9% uptime | AWS · Claude API · FAISS · ECS Fargate |
-| [📡 Real-Time Surveillance AI @ TIFR](https://github.com/alwin-jacob/realtime-surveillance-ai) | YOLOv4 + CUDA pipeline, 2 FPS → 30+ FPS, deployed on AWS for live campus security | YOLOv4 · TensorRT · CUDA · AWS |
+* versioned evaluation datasets and reproducible runs
+* deterministic, structured, and model-based graders
+* judge calibration and disagreement analysis
+* trajectory / tool-use evaluation
+* baseline-vs-candidate regression testing
+* latency, token, cost, and failure accounting
+* concurrent execution and provider abstraction
+* CI regression gates
+* structured failure analysis and experiment artifacts
 
----
+**Engineering question:**
+How do we make stochastic model behavior testable with the rigor expected from production software?
 
-## Background
-
-- 🎓 **Northeastern University** — MS CS, GPA 3.95 · NLP · ML · Cloud Computing · AI Capstone
-- 💼 **ChargePoint** — SWE Intern · AI-assisted test automation · 32% dev time reduction
-- 🏢 **Deloitte** — Consultant · Risk automation · 400+ vendor assessments
-- 🔬 **TIFR** — Software Developer · Real-time CV system · 15x GPU speedup
+→ **[llm-eval-reliability](EVAL_REPO_URL)**
 
 ---
 
-## Technical
+### ⚡ LLM Inference Systems
+
+**vLLM · PyTorch · CUDA · Nsight**
+
+Reproducible benchmarking and performance-analysis infrastructure for LLM serving.
+
+* TTFT, TPOT, throughput, p50 / p95 / p99 latency
+* concurrency and request-shape sweeps
+* continuous batching behavior
+* KV-cache utilization and memory pressure
+* prefix caching
+* quantization experiments
+* speculative decoding
+* GPU utilization and bottleneck analysis
+* performance regression detection
+* controlled cross-runtime experiments
+
+**Engineering question:**
+Where does LLM serving performance actually come from — scheduler behavior, memory systems, kernels, or hardware utilization?
+
+→ **[llm-inference-systems](INFERENCE_REPO_URL)**
+
+---
+
+## Systems Direction
+
+The problems I am most interested in sit across this stack:
+
+```text
+Model behavior
+      ↓
+Evaluation & verification
+      ↓
+Inference / serving
+      ↓
+Schedulers, batching & KV cache
+      ↓
+Distributed execution
+      ↓
+Compilers & kernels
+      ↓
+GPU / accelerator hardware
 ```
-AI/ML        PyTorch · TensorFlow · Scikit-learn · HuggingFace · LangChain · MLflow
-NLP          Transformers · RAG · FAISS · Semantic Search
-Cloud        AWS (EC2, S3, ECS, Lambda, RDS) · Docker · Kubernetes · Terraform
-Backend      FastAPI · Flask · Node.js · Spring Boot · gRPC
+
+Inference also connects naturally back into training:
+
+```text
+Inference
+    ↓
+Rollout generation
+    ↓
+Rewards / verifiers / evaluation
+    ↓
+Post-training
+    ↓
+Distributed training systems
 ```
+
+Current areas of active depth-building include:
+
+* **Evaluation systems:** regression infrastructure, reliability, judge calibration, agent/tool-use evaluation
+* **Inference systems:** batching, KV-cache management, latency/throughput tradeoffs, serving runtimes
+* **Performance engineering:** profiling, bottleneck analysis, GPU utilization, reproducible benchmarking
+* **Distributed ML systems:** execution, scheduling, communication, fault tolerance
+* **Rollout / post-training infrastructure:** inference-backed sampling, evaluation loops, reward/verifier systems
+* **Lower-level optimization:** PyTorch internals, Triton/CUDA, kernels, runtime/compiler behavior
 
 ---
 
-## Currently
+## Selected Historical Engineering Work
 
-- 🔬 Running influence function experiments — AI Capstone research
-- 🤝 Open to **Research Engineer · MLE · SWE** roles — authorized for OPT
+### Fairness-Aware Marketplace Recommendation System
 
-📬 [jacob.alw@northeastern.edu](mailto:jacob.alw@northeastern.edu) · [LinkedIn](https://linkedin.com/in/alwin-jacob)
+**Project period: 2026 · Public engineering reconstruction / validation ongoing**
+
+**PyTorch · Polars · DuckDB · cvxpy · FastAPI**
+
+End-to-end recommendation and evaluation system exploring relevance versus marketplace exposure.
+
+* implicit-feedback recommendation
+* constrained reranking
+* recommendation-quality and exposure metrics
+* synthetic marketplace simulation
+* data-processing pipeline
+* API inference
+* reproducible evaluation
+
+→ **[Repository](https://github.com/alwin-jacob/fairness-aware-ad-recsys)**
+
+---
+
+### Additional Historical Work
+
+Selected projects from earlier engineering and academic work will be published here with their **original project periods** and clearly identified current reproductions, extensions, or validations where applicable.
+
+The repository publication date is not used as a substitute for the actual period in which historical project work occurred.
+
+---
+
+## Experience
+
+**Northeastern University**
+Teaching Assistant — Natural Language Processing · Jan 2026 – Apr 2026
+
+**ChargePoint**
+Software QA Engineer Intern — AI/ML Initiative Lead · Jul 2025 – Aug 2025
+
+**Deloitte**
+Consultant · Jul 2022 – Aug 2024
+
+**Tata Institute of Fundamental Research (TIFR)**
+Machine Learning Engineer · Jul 2021 – Jun 2022
+
+---
+
+## Education
+
+**Northeastern University**
+MS, Computer Science · Sep 2024 – May 2026
+
+**University of Mumbai**
+BE, Computer Engineering · Jul 2018 – May 2022
+
+---
+
+## Engineering Interests
+
+I am especially interested in systems where **software architecture materially determines model capability, reliability, or efficiency**:
+
+`ML systems` · `inference` · `evaluation` · `AI reliability` · `distributed systems` · `performance engineering` · `rollout infrastructure` · `training systems`
+
+I enjoy working across abstraction boundaries — from model behavior and evaluation methodology down through serving architecture, profiling, runtime behavior, and implementation.
