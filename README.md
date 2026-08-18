@@ -17,24 +17,23 @@ I build **production AI systems at the boundary between model behavior and syste
 
 ### LLM Evaluation & Reliability
 
-**Python · PyTorch · FastAPI · pytest · CI**
+**Python · FastAPI · pytest · asyncio · GitHub Actions**
 
 Evaluation and regression infrastructure for models and agents.
 
-* versioned evaluation datasets and reproducible runs
-* deterministic, structured, and model-based graders
-* judge calibration and disagreement analysis
-* trajectory / tool-use evaluation
-* baseline-vs-candidate regression testing
-* latency, token, cost, and failure accounting
-* concurrent execution and provider abstraction
-* CI regression gates
-* structured failure analysis and experiment artifacts
+* versioned evaluation datasets and reproducible run artifacts
+* deterministic, schema, and model-based graders
+* independent human-reference and blinded judge experiments
+* baseline-vs-candidate regression policies
+* timeout, retry, and partial-failure isolation
+* concurrent evaluation and provider abstraction
+* latency, token, usage, and failure accounting
+* CI-tested regression infrastructure
 
 **Engineering question:**
 How do we make stochastic model behavior testable with the rigor expected from production software?
 
-→ **[llm-eval-reliability](EVAL_REPO_URL)**
+→ **[llm-eval-reliability](https://github.com/alwin-jacob/llm-eval-reliability)**
 
 ---
 
@@ -58,7 +57,7 @@ Reproducible benchmarking and performance-analysis infrastructure for LLM servin
 **Engineering question:**
 Where does LLM serving performance actually come from — scheduler behavior, memory systems, kernels, or hardware utilization?
 
-→ **[llm-inference-systems](INFERENCE_REPO_URL)**
+**In progress**
 
 ---
 
