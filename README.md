@@ -4,7 +4,7 @@
 
 MS Computer Science, Northeastern University · San Jose, CA
 
-I build inspectable infrastructure for evaluating and operating AI systems. My current public work focuses on failure-aware agent execution and evaluation/regression systems; I am extending this trajectory into LLM inference and serving.
+I build infrastructure for evaluating and operating AI systems. My current work focuses on failure-aware agent execution and evaluation/regression systems.
 
 `evaluation → agent reliability → inference / serving → rollout systems → post-training / training infrastructure`
 
@@ -49,14 +49,6 @@ A local-first evaluation and regression framework for making stochastic model an
 
 ---
 
-## Building Next
-
-### LLM Inference Systems
-
-Reproducible LLM inference and serving infrastructure, beginning with streaming measurement, concurrency, batching, and scheduling behavior. Runtime comparisons, KV-cache analysis, profiling, quantization, and speculative-decoding work will be added only as corresponding implementations and artifacts exist.
-
----
-
 ## Systems Direction
 
 I am interested in systems where software architecture materially determines model reliability, capability, or efficiency:
@@ -76,51 +68,6 @@ Rollout and post-training systems
       ↓
 Distributed execution, compilers, and kernels
 ```
-
-The goal is a coherent public engineering record in which deeper inspection reveals implementation, tests, reproducible evidence, failures, trade-offs, and explicit limitations.
-
----
-
-## Selected Historical Engineering Work
-
-### Fairness-Aware Marketplace Recommendation System
-
-**Project period: 2026 · Public engineering reconstruction / validation ongoing**
-
-**PyTorch · Polars · DuckDB · cvxpy · FastAPI**
-
-An end-to-end recommendation and evaluation system exploring relevance versus marketplace exposure through implicit-feedback recommendation, constrained reranking, marketplace simulation, data processing, API inference, and fairness/relevance metrics.
-
-→ **[fairness-aware-ad-recsys](https://github.com/alwin-jacob/fairness-aware-ad-recsys)**
-
-Historical artifacts are identified by their original project periods. Repository publication dates are not presented as substitutes for when earlier work occurred, and current validation or reconstruction is labeled explicitly.
-
----
-
-## Experience
-
-**Northeastern University**  
-Teaching Assistant — Natural Language Processing · Jan 2026 – Apr 2026
-
-**ChargePoint**  
-Software QA Engineer Intern — AI/ML Initiative Lead · Jul 2025 – Aug 2025
-
-**Deloitte**  
-Consultant · Jul 2022 – Aug 2024
-
-**Tata Institute of Fundamental Research (TIFR)**  
-Machine Learning Engineer · Jul 2021 – Jun 2022
-
----
-
-## Education
-
-**Northeastern University**  
-MS, Computer Science · Sep 2024 – May 2026
-
-**University of Mumbai**  
-BE, Computer Engineering · Jul 2018 – May 2022
-
 ---
 
 ## Engineering Interests
